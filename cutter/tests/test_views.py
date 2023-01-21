@@ -9,7 +9,7 @@ class PolygonCutterViewTest(BaseTestCase, TestDataMixin):
     resource: str
 
     @classmethod
-    def setUpTestData(cls):
+    def setUpTestData(cls) -> None:
         cls.resource = "polygon-cutter"
 
     def test_inside_cut_vertical(self) -> None:

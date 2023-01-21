@@ -174,7 +174,7 @@ Results will be available inside the folder [./htmlconv](./htmlconv):
 
 ### Formatting and Linting
 
-Formatting is performed using [black](https://github.com/psf/black) and [isort](https://pycqa.github.io/isort/).
+Formatting is performed using [black](https://github.com/psf/black), [isort](https://pycqa.github.io/isort/), and [autoflake](https://github.com/PyCQA/autoflake).
 
 Configuration for these can be found in the file [./pyproject.toml](./pyproject.toml).
 
@@ -203,7 +203,13 @@ You may run the application using docker, without setting up a development envir
 
 ```commandline
 docker build . -t polygon-service
-docker run -p 127.0.0.1:5000:5000/tcp -t polygon-service
+docker run --name polygon-service -p 127.0.0.1:5000:5000/tcp -t polygon-service
+```
+
+You may stop the service by running the following command:
+
+```commandline
+docker stop polygon-service
 ```
 
 The application will be available through your browser: [http://localhost:5000/](http://localhost:5000/).
