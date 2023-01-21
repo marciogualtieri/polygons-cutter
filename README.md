@@ -186,16 +186,15 @@ We are ignoring typing for Django generated files (e.g., migration folders, `set
 
 Shortcuts to all commands used in the projects are available through [Honcho](https://honcho.readthedocs.io/en/latest/).
 
-| Command     | Description                                                                                                      |
-|-------------|------------------------------------------------------------------------------------------------------------------|
-| service     | Runs service using [UWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) (meant to be used by the Docker image). |
-| format      | Formats code.                                                                                                    |
-| check       | Checks formatting and typing (meant to be used by CI/CD pipelines).                                              |
-| test        | Runs all tests.                                                                                                  |
-| coverage    | Generates coverage reports.                                                                                      |
-| runserver   | Runs the service in development mode.                                                                            |
-| migrate     | Runs Django migrations.                                                                                          |
-
+| Command       | Description                                                                                                      |
+|---------------|------------------------------------------------------------------------------------------------------------------|
+| service       | Runs service using [UWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) (meant to be used by the Docker image). |
+| format        | Formats code.                                                                                                    |
+| check         | Checks formatting and typing (meant to be used by CI/CD pipelines).                                              |
+| test          | Runs all tests.                                                                                                  |
+| coverage      | Generates coverage reports.                                                                                      |
+| runserver     | Runs the service in development mode.                                                                            |
+| migrate       | Runs Django migrations.                                                                                          |
 
 ## Running the API with Docker
 
@@ -210,6 +209,7 @@ You may stop the service by running the following command:
 
 ```commandline
 docker stop polygon-service
+docker rm polygon-service
 ```
 
 The application will be available through your browser: [http://localhost:5000/](http://localhost:5000/).
