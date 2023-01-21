@@ -1,0 +1,50 @@
+[tool.poetry]
+name = "cutter"
+version = "0.1.0"
+description = "REST API that allows cutting polygons at 3D Planes."
+authors = ["Marcio Gualtieri <marcio.gualtieri@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.5"
+drf-yasg = "^1.21.4"
+shapely = "^2.0.0"
+numpy = "^1.24.1"
+djangorestframework = "^3.14.0"
+pytest-django = "^4.5.2"
+psycopg2-binary = "^2.9.5"
+djangorestframework-dataclasses = "^1.2.0"
+dataclasses-json = "^0.5.7"
+sympy = "^1.11.1"
+uwsgi = "^2.0.21"
+honcho = "^1.1.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.1"
+deepdiff = "^6.2.3"
+pytest-cov = "^4.0.0"
+honcho = "^1.1.0"
+black = "^22.12.0"
+isort = "^5.11.4"
+mypy = "^0.991"
+pytest-html = "^3.2.0"
+autoflake = "^2.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+ignore_missing_imports = true
+disallow_subclassing_any = false
+follow_imports = "skip"
+strict = true
+exclude = [
+    ".*migrations.*",
+    "settings\\.py",
+    "manage\\.py"
+]
+
+[tool.isort]
+profile = "black"
