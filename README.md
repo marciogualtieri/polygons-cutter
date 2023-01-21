@@ -170,7 +170,7 @@ pytest --cov=. --cov-report=html
 
 Results will be available inside the folder [./htmlconv](./htmlconv):
 
-<img src="./images/coverage.png" alt="response" width="200"/>
+<img src="./images/coverage1.png" alt="response" width="400"/>
 
 ### Formatting and Linting
 
@@ -195,7 +195,6 @@ Shortcuts to all commands used in the projects are available through [Honcho](ht
 | coverage    | Generates coverage reports.                                                                                      |
 | runserver   | Runs the service in development mode.                                                                            |
 | migrate     | Runs Django migrations.                                                                                          |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- |
 
 
 ## Running the API with Docker
@@ -211,12 +210,12 @@ The application will be available through your browser: [http://localhost:5000/]
 
 You may use the OpenAPI page (default view) to send requests:
 
-<img src="./images/app1.png" alt="home" width="200"/>
+<img src="./images/app1.png" alt="home" width="400"/>
 
 There's already an example setup for the OpenAPI page (a 4x4 isosceles triangle next to the origin):
 
-<img src="./images/app2.png" alt="request" width="200"/>
+<img src="./images/app2.png" alt="request" width="400"/>
 
-<img src="./images/app3.png" alt="response" width="200"/>
+<img src="./images/app3.png" alt="response" width="400"/>
 
 However, it's also possible to call the API directly using [curl](https://curl.se/) or some other HTTP client.
